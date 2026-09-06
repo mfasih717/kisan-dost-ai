@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/static/style.css?v=13" />
+  <!-- Ensure this points to your updated CSS -->
+  <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -67,42 +68,17 @@
           </button>
         </div>
 
+        <!-- NEW COMING SOON MODULE -->
+        <div class="coming-soon-module reveal reveal-5">
+          <div class="coming-soon-icon">🛠️</div>
+          <div class="coming-soon-text">
+            <strong>More Tools Coming Soon</strong>
+            <small>Crop disease & yield modules</small>
+          </div>
+        </div>
+
         <div class="quick-actions reveal reveal-4" style="display:none">
-          <button class="quick-card" data-prompt="5 acre wheat ke liye fertilizer kitna lagega?">
-            <span class="quick-icon icon-green">🌱</span>
-            <span class="quick-copy">
-              <strong>Fertilizer Plan</strong>
-              <small>Crop-wise recommendation</small>
-            </span>
-            <span class="quick-arrow">›</span>
-          </button>
-
-          <button class="quick-card" data-prompt="Cotton ke pattay curl ho rahe hain aur chhote white insects hain, kya masla hai?">
-            <span class="quick-icon icon-mint">🐛</span>
-            <span class="quick-copy">
-              <strong>Pest Doctor</strong>
-              <small>Identify crop problems</small>
-            </span>
-            <span class="quick-arrow">›</span>
-          </button>
-
-          <button class="quick-card" data-prompt="Cotton ka rate Multan mein kya hai?">
-            <span class="quick-icon icon-blue">📈</span>
-            <span class="quick-copy">
-              <strong>Mandi Prices</strong>
-              <small>Check market rates</small>
-            </span>
-            <span class="quick-arrow">›</span>
-          </button>
-
-          <button class="quick-card" data-prompt="5 acre wheat ki expected profit estimate batao">
-            <span class="quick-icon icon-gold">💰</span>
-            <span class="quick-copy">
-              <strong>Farm Profit</strong>
-              <small>Estimate costs & returns</small>
-            </span>
-            <span class="quick-arrow">›</span>
-          </button>
+          <!-- Hidden old quick actions -->
         </div>
       </div>
 
@@ -113,110 +89,110 @@
     </aside>
 
     <section class="chat-panel">
+      <!-- CHAT VIEW -->
       <div id="chatView" class="app-view active-view">
-      <header class="topbar">
-        <div class="topbar-left">
-          <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
-          <div>
-            <p class="eyebrow">Smart Agriculture Assistant</p>
-            <h2>Ask Kisan Dost</h2>
+        <header class="topbar">
+          <div class="topbar-left">
+            <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+            <div>
+              <p class="eyebrow">Smart Agriculture Assistant</p>
+              <h2>Ask Kisan Dost</h2>
+            </div>
           </div>
-        </div>
 
-        <div class="topbar-actions chat-topbar-actions">
-          <div class="status-pill online-status"><span class="status-live-dot"></span><span>Agent Online</span></div>
-          <button id="newChatBtn" class="top-new-chat-btn" type="button" title="Start a new chat">
-            <span class="top-new-chat-icon">＋</span>
-            <span>New Chat</span>
-          </button>
-        </div>
-      </header>
+          <div class="topbar-actions chat-topbar-actions">
+            <div class="status-pill online-status"><span class="status-live-dot"></span><span>Agent Online</span></div>
+            <button id="newChatBtn" class="top-new-chat-btn" type="button" title="Start a new chat">
+              <span class="top-new-chat-icon">＋</span>
+              <span>New Chat</span>
+            </button>
+          </div>
+        </header>
 
-      <div id="chatArea" class="chat-area">
-        <div class="welcome-card reveal reveal-main">
-          <div class="welcome-graphic" aria-hidden="true">
-            <div class="sky-glow"></div>
-            <div class="sun-wrap">
-              <div class="sun-rays"></div>
-              <div class="sun">
-                <span class="sun-eye sun-eye-left"></span>
-                <span class="sun-eye sun-eye-right"></span>
-                <span class="sun-smile"></span>
+        <div id="chatArea" class="chat-area">
+          <div class="welcome-card reveal reveal-main">
+            <div class="welcome-graphic" aria-hidden="true">
+              <div class="sky-glow"></div>
+              <div class="sun-wrap">
+                <div class="sun-rays"></div>
+                <div class="sun">
+                  <span class="sun-eye sun-eye-left"></span>
+                  <span class="sun-eye sun-eye-right"></span>
+                  <span class="sun-smile"></span>
+                </div>
+              </div>
+              <div class="cloud cloud-one">☁</div>
+              <div class="cloud cloud-two">☁</div>
+              <div class="field field-back"></div>
+              <div class="field field-mid"></div>
+              <div class="field field-front"></div>
+              <div class="plant plant-one">🌾</div>
+              <div class="plant plant-two">🌾</div>
+              <div class="plant plant-three">🌾</div>
+              <div class="spark spark-1">✦</div>
+              <div class="spark spark-2">✦</div>
+              <div class="spark spark-3">✦</div>
+              <div class="tractor-track" aria-hidden="true">
+                <div class="tractor">🚜</div>
+                <span class="tractor-dust dust-one"></span>
+                <span class="tractor-dust dust-two"></span>
+                <span class="tractor-dust dust-three"></span>
               </div>
             </div>
-            <div class="cloud cloud-one">☁</div>
-            <div class="cloud cloud-two">☁</div>
-            <div class="field field-back"></div>
-            <div class="field field-mid"></div>
-            <div class="field field-front"></div>
-            <div class="plant plant-one">🌾</div>
-            <div class="plant plant-two">🌾</div>
-            <div class="plant plant-three">🌾</div>
-            <div class="spark spark-1">✦</div>
-            <div class="spark spark-2">✦</div>
-            <div class="spark spark-3">✦</div>
-            <div class="tractor-track" aria-hidden="true">
-              <div class="tractor">🚜</div>
-              <span class="tractor-dust dust-one"></span>
-              <span class="tractor-dust dust-two"></span>
-              <span class="tractor-dust dust-three"></span>
+
+            <div class="welcome-content">
+              <span class="welcome-tag"><i></i> AI-powered farming support</span>
+              <div class="greeting-line">
+                <span id="timeGreeting" class="time-greeting">Good Morning</span>
+                <span class="greeting-dot">•</span>
+                <span class="salam-text">Assalam-o-Alaikum!</span>
+                <span class="wave">👋</span>
+              </div>
+              <p>
+                Main <strong>Kisan Dost</strong> hoon. Fasal, fertilizer, pests,
+                mandi prices aur farm profit ke bare mein pooch sakte ho.
+              </p>
             </div>
           </div>
 
-          <div class="welcome-content">
-            <span class="welcome-tag"><i></i> AI-powered farming support</span>
-            <div class="greeting-line">
-              <span id="timeGreeting" class="time-greeting">Good Morning</span>
-              <span class="greeting-dot">•</span>
-              <span class="salam-text">Assalam-o-Alaikum!</span>
-              <span class="wave">👋</span>
+          <div class="date-divider"><span>Today</span></div>
+        </div>
+
+        <div class="composer-wrap">
+          <div id="typingIndicator" class="typing-indicator hidden">
+            <div class="typing-avatar">KD</div>
+            <div class="typing-bubble">
+              <span></span><span></span><span></span>
             </div>
-            <p>
-              Main <strong>Kisan Dost</strong> hoon. Fasal, fertilizer, pests,
-              mandi prices aur farm profit ke bare mein pooch sakte ho.
-            </p>
-
+            <em>Kisan Dost soch raha hai...</em>
           </div>
-        </div>
 
-        <div class="date-divider"><span>Today</span></div>
-      </div>
+          <div class="composer">
+            <button class="voice-btn" id="voiceBtn" title="Voice input" aria-label="Voice input">
+              <span class="mic-icon">🎙️</span>
+            </button>
 
-      <div class="composer-wrap">
-        <div id="typingIndicator" class="typing-indicator hidden">
-          <div class="typing-avatar">KD</div>
-          <div class="typing-bubble">
-            <span></span><span></span><span></span>
+            <textarea
+              id="messageInput"
+              rows="1"
+              placeholder="Ask your farming question..."
+              aria-label="Message"
+            ></textarea>
+
+            <button id="sendBtn" class="send-btn" aria-label="Send message">
+              <span class="send-icon">➜</span>
+            </button>
           </div>
-          <em>Kisan Dost soch raha hai...</em>
+
+          <p class="composer-note">
+            <span>Roman Urdu & English supported</span>
+            <i></i>
+            <span>Farming-related help ke liye hai</span>
+          </p>
         </div>
-
-        <div class="composer">
-          <button class="voice-btn" id="voiceBtn" title="Voice input" aria-label="Voice input">
-            <span class="mic-icon">🎙️</span>
-          </button>
-
-          <textarea
-            id="messageInput"
-            rows="1"
-            placeholder="Ask your farming question..."
-            aria-label="Message"
-          ></textarea>
-
-          <button id="sendBtn" class="send-btn" aria-label="Send message">
-            <span class="send-icon">➜</span>
-          </button>
-        </div>
-
-        <p class="composer-note">
-          <span>Roman Urdu & English supported</span>
-          <i></i>
-          <span>Farming-related help ke liye hai</span>
-        </p>
       </div>
 
-      </div>
-
+      <!-- PROBLEM SOLVER VIEW -->
       <div id="solverView" class="app-view solver-view">
         <header class="topbar solver-topbar">
           <div class="topbar-left">
@@ -331,6 +307,7 @@
 
   <div id="mobileOverlay" class="mobile-overlay"></div>
 
-  <script src="/static/script.js?v=13"></script>
+  <!-- Ensure this points to your JS file -->
+  <script src="/static/script.js"></script>
 </body>
 </html>

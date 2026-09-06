@@ -1,6 +1,9 @@
 import os
 import uuid
 import asyncio
+import mimetypes
+
+mimetypes.add_type('text/css', '.css')
 
 from flask import (
     Flask,
