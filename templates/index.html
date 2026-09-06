@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#123f2b" />
+  <title>Kisan Dost — AI Farming Assistant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/style.css?v=13" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <div class="floating-leaf leaf-a">🍃</div>
+  <div class="floating-leaf leaf-b">🌿</div>
+  <div class="floating-leaf leaf-c">🍃</div>
+
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-decoration sidebar-decoration-one"></div>
+      <div class="sidebar-decoration sidebar-decoration-two"></div>
+
+      <div class="sidebar-content">
+        <div class="brand reveal reveal-1">
+          <div class="brand-mark">
+            <span class="brand-wheat">🌾</span>
+          </div>
+          <div>
+            <h1>Kisan Dost</h1>
+            <p>AI Farming Assistant</p>
+          </div>
+        </div>
+
+        <div class="assistant-card reveal reveal-2">
+          <div class="assistant-avatar">
+            <span>KD</span>
+            <i></i>
+          </div>
+          <div class="assistant-copy">
+            <div class="assistant-row">
+              <strong>Kisan Dost AI</strong>
+              <span class="online-dot"></span>
+            </div>
+            <p>Smart farming help, 24/7</p>
+          </div>
+        </div>
+
+        <div class="section-label reveal reveal-3">Workspace</div>
+
+        <div class="workspace-tabs reveal reveal-4">
+          <button class="workspace-tab active" data-view="chatView">
+            <span class="workspace-icon">💬</span>
+            <span><strong>Kisan Dost AI</strong><small>Chat farming assistant</small></span>
+            <span class="quick-arrow">›</span>
+          </button>
+
+          <button class="workspace-tab" data-view="solverView">
+            <span class="workspace-icon solver-icon">🧠</span>
+            <span><strong>Farm Problem Solver</strong><small>Best crop decision</small></span>
+            <span class="quick-arrow">›</span>
+          </button>
+        </div>
+
+        <div class="quick-actions reveal reveal-4" style="display:none">
+          <button class="quick-card" data-prompt="5 acre wheat ke liye fertilizer kitna lagega?">
+            <span class="quick-icon icon-green">🌱</span>
+            <span class="quick-copy">
+              <strong>Fertilizer Plan</strong>
+              <small>Crop-wise recommendation</small>
+            </span>
+            <span class="quick-arrow">›</span>
+          </button>
+
+          <button class="quick-card" data-prompt="Cotton ke pattay curl ho rahe hain aur chhote white insects hain, kya masla hai?">
+            <span class="quick-icon icon-mint">🐛</span>
+            <span class="quick-copy">
+              <strong>Pest Doctor</strong>
+              <small>Identify crop problems</small>
+            </span>
+            <span class="quick-arrow">›</span>
+          </button>
+
+          <button class="quick-card" data-prompt="Cotton ka rate Multan mein kya hai?">
+            <span class="quick-icon icon-blue">📈</span>
+            <span class="quick-copy">
+              <strong>Mandi Prices</strong>
+              <small>Check market rates</small>
+            </span>
+            <span class="quick-arrow">›</span>
+          </button>
+
+          <button class="quick-card" data-prompt="5 acre wheat ki expected profit estimate batao">
+            <span class="quick-icon icon-gold">💰</span>
+            <span class="quick-copy">
+              <strong>Farm Profit</strong>
+              <small>Estimate costs & returns</small>
+            </span>
+            <span class="quick-arrow">›</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="sidebar-footer reveal reveal-5">
+        <div class="mini-badge"><span>🇵🇰</span> Built for Pakistani Farmers</div>
+        <p>AI + Agriculture • Smart Farming Support</p>
+      </div>
+    </aside>
+
+    <section class="chat-panel">
+      <div id="chatView" class="app-view active-view">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+          <div>
+            <p class="eyebrow">Smart Agriculture Assistant</p>
+            <h2>Ask Kisan Dost</h2>
+          </div>
+        </div>
+
+        <div class="topbar-actions chat-topbar-actions">
+          <div class="status-pill online-status"><span class="status-live-dot"></span><span>Agent Online</span></div>
+          <button id="newChatBtn" class="top-new-chat-btn" type="button" title="Start a new chat">
+            <span class="top-new-chat-icon">＋</span>
+            <span>New Chat</span>
+          </button>
+        </div>
+      </header>
+
+      <div id="chatArea" class="chat-area">
+        <div class="welcome-card reveal reveal-main">
+          <div class="welcome-graphic" aria-hidden="true">
+            <div class="sky-glow"></div>
+            <div class="sun-wrap">
+              <div class="sun-rays"></div>
+              <div class="sun">
+                <span class="sun-eye sun-eye-left"></span>
+                <span class="sun-eye sun-eye-right"></span>
+                <span class="sun-smile"></span>
+              </div>
+            </div>
+            <div class="cloud cloud-one">☁</div>
+            <div class="cloud cloud-two">☁</div>
+            <div class="field field-back"></div>
+            <div class="field field-mid"></div>
+            <div class="field field-front"></div>
+            <div class="plant plant-one">🌾</div>
+            <div class="plant plant-two">🌾</div>
+            <div class="plant plant-three">🌾</div>
+            <div class="spark spark-1">✦</div>
+            <div class="spark spark-2">✦</div>
+            <div class="spark spark-3">✦</div>
+            <div class="tractor-track" aria-hidden="true">
+              <div class="tractor">🚜</div>
+              <span class="tractor-dust dust-one"></span>
+              <span class="tractor-dust dust-two"></span>
+              <span class="tractor-dust dust-three"></span>
+            </div>
+          </div>
+
+          <div class="welcome-content">
+            <span class="welcome-tag"><i></i> AI-powered farming support</span>
+            <div class="greeting-line">
+              <span id="timeGreeting" class="time-greeting">Good Morning</span>
+              <span class="greeting-dot">•</span>
+              <span class="salam-text">Assalam-o-Alaikum!</span>
+              <span class="wave">👋</span>
+            </div>
+            <p>
+              Main <strong>Kisan Dost</strong> hoon. Fasal, fertilizer, pests,
+              mandi prices aur farm profit ke bare mein pooch sakte ho.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="date-divider"><span>Today</span></div>
+      </div>
+
+      <div class="composer-wrap">
+        <div id="typingIndicator" class="typing-indicator hidden">
+          <div class="typing-avatar">KD</div>
+          <div class="typing-bubble">
+            <span></span><span></span><span></span>
+          </div>
+          <em>Kisan Dost soch raha hai...</em>
+        </div>
+
+        <div class="composer">
+          <button class="voice-btn" id="voiceBtn" title="Voice input" aria-label="Voice input">
+            <span class="mic-icon">🎙️</span>
+          </button>
+
+          <textarea
+            id="messageInput"
+            rows="1"
+            placeholder="Ask your farming question..."
+            aria-label="Message"
+          ></textarea>
+
+          <button id="sendBtn" class="send-btn" aria-label="Send message">
+            <span class="send-icon">➜</span>
+          </button>
+        </div>
+
+        <p class="composer-note">
+          <span>Roman Urdu & English supported</span>
+          <i></i>
+          <span>Farming-related help ke liye hai</span>
+        </p>
+      </div>
+
+      </div>
+
+      <div id="solverView" class="app-view solver-view">
+        <header class="topbar solver-topbar">
+          <div class="topbar-left">
+            <button class="menu-btn solver-menu-btn" aria-label="Open menu">☰</button>
+            <div>
+              <p class="eyebrow">Smart Farm Decision Support</p>
+              <h2>Farm Problem Solver</h2>
+            </div>
+          </div>
+          <div class="topbar-actions solver-topbar-actions">
+            <div class="status-pill guided-status"><span class="status-live-dot"></span><span>Guided Problem Solving</span></div>
+            <div class="status-pill solver-status"><span>🎯</span><span>Decision Mode</span></div>
+          </div>
+        </header>
+
+        <div class="solver-scroll">
+          <section class="solver-hero">
+            <div>
+              <h3 class="solver-title-animated">
+                <span class="solver-title-main">Apni zameen ke liye</span>
+                <strong>Best Fasal</strong>
+                <span class="solver-title-main">choose karo</span>
+              </h3>
+            </div>
+            <div class="solver-orbit" aria-hidden="true">
+              <div class="orbit-core">🌱</div>
+              <span class="orbit-item orbit-a">💧</span>
+              <span class="orbit-item orbit-b">🌾</span>
+              <span class="orbit-item orbit-c">🧪</span>
+            </div>
+          </section>
+
+          <section class="solver-grid">
+            <form id="farmSolverForm" class="solver-form-card">
+              <div class="form-heading">
+                <div><span class="step-badge">01</span><h4>Farm Details</h4></div>
+                <p>Required details fill karein</p>
+              </div>
+
+              <div class="field-grid">
+                <label class="form-field">
+                  <span>District</span>
+                  <input id="solverDistrict" type="text" placeholder="e.g. Faisalabad" required>
+                </label>
+
+                <label class="form-field">
+                  <span>Land Size (Acres)</span>
+                  <input id="solverAcres" type="number" min="0.1" step="0.1" placeholder="e.g. 5" required>
+                </label>
+
+                <label class="form-field">
+                  <span>Soil Type</span>
+                  <select id="solverSoil" required>
+                    <option value="">Select soil</option>
+                    <option value="loamy">Loamy</option>
+                    <option value="clay">Clay</option>
+                    <option value="sandy">Sandy</option>
+                  </select>
+                </label>
+
+                <label class="form-field">
+                  <span>Season</span>
+                  <select id="solverSeason" required>
+                    <option value="">Select season</option>
+                    <option value="Rabi">Rabi</option>
+                    <option value="Kharif">Kharif</option>
+                  </select>
+                </label>
+
+                <label class="form-field full-field">
+                  <span>Water Availability</span>
+                  <select id="solverWater" required>
+                    <option value="">Select water condition</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="waterlogging / pani zyada der khara rehta hai">Waterlogging / Pani khara rehta hai</option>
+                  </select>
+                </label>
+              </div>
+
+              <button type="submit" id="solveBtn" class="solve-btn">
+                <span>✨</span> Solve My Farm Problem <span class="solve-arrow">→</span>
+              </button>
+            </form>
+
+            <div class="solver-result-card">
+              <div class="form-heading">
+                <div><span class="step-badge result-step">02</span><h4>AI Recommendation</h4></div>
+                <p>Decision yahan show hoga</p>
+              </div>
+
+              <div id="solverEmpty" class="solver-empty">
+                <div class="empty-icon">🌾</div>
+                <strong>Farm details submit karein</strong>
+                <p>Kisan Dost aapke inputs ko analyze karke best crop suggestion dega.</p>
+              </div>
+
+              <div id="solverLoading" class="solver-loading hidden">
+                <div class="loader-ring"></div>
+                <strong>Farm analyze ho raha hai...</strong>
+                <p>Soil, season aur water condition check ki ja rahi hai.</p>
+              </div>
+
+              <div id="solverResult" class="solver-result hidden"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="mobileOverlay" class="mobile-overlay"></div>
+
+  <script src="/static/script.js?v=13"></script>
+</body>
+</html>

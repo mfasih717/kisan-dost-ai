@@ -1,0 +1,14 @@
+NEW CHAT ko backend memory ke sath reset karne ke liye web_app.py mein
+`if __name__ == "__main__":` se JUST PEHLE ye route add karein:
+
+@app.route("/new-chat", methods=["POST"])
+def new_chat():
+    flask_session["farmer_session_id"] = uuid.uuid4().hex
+    flask_session.pop("last_agent_key", None)
+    flask_session.pop("last_response_language", None)
+    return jsonify({"ok": True}), 200
+
+IMPORTANT:
+- database/kisan_dost.db delete nahi hoti.
+- Sirf current browser ki logical conversation ID nayi ban jati hai.
+- Aapke existing imports mein uuid, jsonify aur flask_session already hain.
